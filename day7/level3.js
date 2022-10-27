@@ -154,11 +154,7 @@ console.log(factorial(5))
 //Call your function isEmpty, it takes a parameter and it checks if it is empty or not
 
 function isEmpty(arr) {
-  if (arr.length != 0) {
-    return false
-  } 
-
-  return true
+  return (arr.length != 0 ? false : true)
 }
 
 console.log(isEmpty([]))
@@ -186,7 +182,7 @@ const sumOfArrayItems = (arr) => {
     if (!(isNaN(i))) {
       sum += i
     } else {
-      console.log('aaa')
+      console.log('Reasonable feedback')
     }
   }
 
